@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const userarry=[
+     {name:'Temo',age:25},
+     {name:'Lasha',age:21},
+     {name:'Ana',age:28}
+]
+        
+     function minage(userarry){
+        if(!userarry||!userarry.length ===0){
+            return null
+        }
+
+        let youngestuser=userarry[0]
+        for (let i = 1; i < userarry.length; i++) {
+        if (userarry[i].age < youngestuser.age) {
+            youngestuser = userarry[i]; 
+        }
+    }
+
+    return youngestuser.name
+     }
+
+     function createuser(userarry){
+        if(!userarry===0){
+            return null
+        }
+        const newuser={name:userarry.name,age:userarry.age}
+        return newuser
+     }
+      const object={name:'Lestamberi',age:20}
+      const newobject=createuser(object)
+
+     console.log(minage(userarry))
+     
+     console.log(newobject)
+
+
+    </script>
+
+</body>
+</html>{}

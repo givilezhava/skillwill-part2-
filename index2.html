@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    
+    function playGame() {
+    let attemptsA = 0;
+    let attemptsB = 0;
+
+    while (true) {
+        const rollA = Math.floor(Math.random() * 6) + 1;
+        const rollB = Math.floor(Math.random() * 6) + 1;
+
+        attemptsA++;
+        attemptsB++;
+
+        console.log(`ცდა${attemptsA}: მოთამაშე ა გააგორა ${rollA}, მოთამაშე ბ გააგორა ${rollB}`);
+
+        if (rollA === 3 ) {
+            console.log(`მოთამაშე ა მოიგო${attemptsA} ცდაში!`);
+            break;
+        } else if (rollB === 3 ) {
+            console.log(`მოთამაშე ბ მოიგო ${attemptsB} ცდაში!`);
+            break;
+        }
+    }
+}
+
+playGame();
+
+ 
+</script>
+</body>
+</html>
